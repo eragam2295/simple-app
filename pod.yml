@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: my-app1
-      image: eragam2295/my-app1:v1
+      image: eragam2295/my-app1
       ports:
         - containerPort: 8080
