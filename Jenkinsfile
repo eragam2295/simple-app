@@ -1,5 +1,5 @@
 pipeline {
-     agent { label  'dev' }
+    *// agent { label  'dev' }
      tools {
          jdk  'openjdk 1.8'
          git  'Default'
