@@ -53,6 +53,11 @@ pipeline {
               sh 'docker push eragam2295/my-app1:2.1.0'
       }
 }   
+	stage ('Input') {  
+	    steps{
+		input( ' Do you want to proceed?)
+	      }
+	}
        stage ( 'deploy to k8s' ) {
            steps{
                sshagent(['kops-machine']) {
